@@ -1668,7 +1668,7 @@
           data-json="true"
           data-freestyle="true"
           data-sdk="N/A"
-          data-visibility="CREW"
+          data-visibility="NONE"
         >
           <td class="troubleName">EnjoyByRollupTrouble</td>
           <td>false</td>
@@ -1676,9 +1676,9 @@
           <td>true</td>
           <td>N/A</td>
           <td><ul></ul></td>
-          <td>CREW</td>
+          <td>NONE</td>
           <td>250</td>
-          <td>white</td>
+          <td>N/A</td>
           <td></td>
           <td></td>
           <td>Multiple ingredients exceed Enjoy By Date</td>
@@ -1704,7 +1704,7 @@
           data-json="true"
           data-freestyle="true"
           data-sdk="freestyle"
-          data-visibility="CREW"
+          data-visibility="NONE"
         >
           <td class="troubleName">EnjoyByTrouble</td>
           <td>true</td>
@@ -1718,9 +1718,9 @@
               <li>enjoyByDays</li>
             </ul>
           </td>
-          <td>CREW</td>
+          <td>NONE</td>
           <td>200</td>
-          <td>white</td>
+          <td>N/A</td>
           <td>__troubles.action.dismiss__</td>
           <td>Dismiss</td>
           <td>
@@ -3140,17 +3140,17 @@
         </tr>
         <tr
           class="row no-action"
-          data-code="false"
+          data-code="true"
           data-json="true"
           data-freestyle="false"
-          data-sdk="N/A"
+          data-sdk="freestyle"
           data-visibility="N/A"
         >
           <td class="troubleName">MicroPumpOccludedNotificationTrouble</td>
-          <td>false</td>
+          <td>true</td>
           <td>true</td>
           <td>false</td>
-          <td>N/A</td>
+          <td>freestyle</td>
           <td>
             <ul>
               <li>childPumpName</li>
@@ -5054,6 +5054,86 @@
         </tr>
         <tr
           class="row"
+          data-code="true"
+          data-json="true"
+          data-freestyle="true"
+          data-sdk="dispense"
+          data-visibility="CREW"
+        >
+          <td class="troubleName">ContainerSoldOutTrouble</td>
+          <td>true</td>
+          <td>true</td>
+          <td>true</td>
+          <td>dispense</td>
+          <td>
+            <ul>
+              <li>ingredientName</li>
+            </ul>
+          </td>
+          <td>CREW</td>
+          <td>530</td>
+          <td>red</td>
+          <td>__troubles.action.replaceIngredient__</td>
+          <td>Replace Ingredient</td>
+          <td>Sold out : {{ingredientName}}</td>
+          <td>Sold out</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr
+          class="row"
+          data-code="true"
+          data-json="true"
+          data-freestyle="true"
+          data-sdk="dispense"
+          data-visibility="CREW"
+        >
+          <td class="troubleName">SliceSoldOutTrouble</td>
+          <td>true</td>
+          <td>true</td>
+          <td>true</td>
+          <td>dispense</td>
+          <td>
+            <ul>
+              <li>ingredientName</li>
+            </ul>
+          </td>
+          <td>CREW</td>
+          <td>530</td>
+          <td>red</td>
+          <td>__troubles.action.replaceIngredient__</td>
+          <td>Replace Ingredient</td>
+          <td>Sold out : {{ingredientName}}</td>
+          <td>Sold out</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr
+          class="row"
           data-code="false"
           data-json="true"
           data-freestyle="true"
@@ -5303,7 +5383,7 @@
           </td>
           <td>CREW</td>
           <td>540</td>
-          <td>N/A</td>
+          <td>gray</td>
           <td></td>
           <td></td>
           <td>Unknown ingredient: {{ unknonwnIngredientId }}</td>
@@ -5849,7 +5929,43 @@
           <td></td>
         </tr>
         <tr
-          class="row no-action"
+          class="row"
+          data-code="true"
+          data-json="true"
+          data-freestyle="false"
+          data-sdk="core"
+          data-visibility="N/A"
+        >
+          <td class="troubleName">OTAUpdatePendingTrouble</td>
+          <td>true</td>
+          <td>true</td>
+          <td>false</td>
+          <td>core</td>
+          <td><ul></ul></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>Activate and Reboot</td>
+          <td></td>
+          <td>Update pending</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr
+          class="row"
           data-code="true"
           data-json="true"
           data-freestyle="false"
@@ -5865,8 +5981,8 @@
           <td>N/A</td>
           <td>N/A</td>
           <td>N/A</td>
-          <td></td>
-          <td></td>
+          <td>__troubles.action.wait__</td>
+          <td>Wait</td>
           <td>Downloading update</td>
           <td></td>
           <td></td>
@@ -6333,8 +6449,8 @@
           <td>N/A</td>
           <td>N/A</td>
           <td>N/A</td>
-          <td>__troubles.action.callForService__</td>
-          <td>Call for Service</td>
+          <td>__troubles.action.retry__</td>
+          <td>Retry</td>
           <td>Update paused due to errors</td>
           <td></td>
           <td></td>
@@ -7403,42 +7519,6 @@
           data-code="true"
           data-json="false"
           data-freestyle="false"
-          data-sdk="core"
-          data-visibility="N/A"
-        >
-          <td class="troubleName">OTAUpdatePendingTrouble</td>
-          <td>true</td>
-          <td>false</td>
-          <td>false</td>
-          <td>core</td>
-          <td><ul></ul></td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr
-          class="row no-action"
-          data-code="true"
-          data-json="false"
-          data-freestyle="false"
           data-sdk="dispense"
           data-visibility="N/A"
         >
@@ -7619,78 +7699,6 @@
           data-code="true"
           data-json="false"
           data-freestyle="false"
-          data-sdk="dispense"
-          data-visibility="N/A"
-        >
-          <td class="troubleName">ContainerSoldOutTrouble</td>
-          <td>true</td>
-          <td>false</td>
-          <td>false</td>
-          <td>dispense</td>
-          <td><ul></ul></td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr
-          class="row no-action"
-          data-code="true"
-          data-json="false"
-          data-freestyle="false"
-          data-sdk="dispense"
-          data-visibility="N/A"
-        >
-          <td class="troubleName">SliceSoldOutTrouble</td>
-          <td>true</td>
-          <td>false</td>
-          <td>false</td>
-          <td>dispense</td>
-          <td><ul></ul></td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td>N/A</td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr
-          class="row no-action"
-          data-code="true"
-          data-json="false"
-          data-freestyle="false"
           data-sdk="freestyle"
           data-visibility="N/A"
         >
@@ -7767,6 +7775,42 @@
           data-visibility="N/A"
         >
           <td class="troubleName">CANPumpTrouble</td>
+          <td>true</td>
+          <td>false</td>
+          <td>false</td>
+          <td>freestyle</td>
+          <td><ul></ul></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr
+          class="row no-action"
+          data-code="true"
+          data-json="false"
+          data-freestyle="false"
+          data-sdk="freestyle"
+          data-visibility="N/A"
+        >
+          <td class="troubleName">MSVPumpOverDeliveryDetectedTrouble</td>
           <td>true</td>
           <td>false</td>
           <td>false</td>
@@ -7915,6 +7959,42 @@
           <td>false</td>
           <td>false</td>
           <td>freestyle</td>
+          <td><ul></ul></td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td>N/A</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr
+          class="row no-action"
+          data-code="false"
+          data-json="false"
+          data-freestyle="false"
+          data-sdk="core"
+          data-visibility="N/A"
+        >
+          <td class="troubleName">null</td>
+          <td>false</td>
+          <td>false</td>
+          <td>false</td>
+          <td>core</td>
           <td><ul></ul></td>
           <td>N/A</td>
           <td>N/A</td>
